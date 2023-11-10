@@ -1,39 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <title>Calculator</title>
- <style>
-    .container {
-      max-width: 300px;
-      margin: 0 auto;
-      text-align: center;
-    }
+		<link rel="stylesheet" type="text/css" href="style.css">
 
-    .input {
-      margin: 5px;
-      padding: 10px;
-      font-size: 16px;
-      width: 100%;
-    }
-
-    .button {
-      padding: 10px;
-      font-size: 16px;
-      margin: 5px;
-      cursor: pointer;
-    }
- </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
- <div class="container">
-    <input type="number" class="input" id="num1" placeholder="Enter first number">
-    <input type="number" class="input" id="num2" placeholder="Enter second number">
-    <br>
-    <button class="button" onclick="calculate('+')">+</button>
-    <button class="button" onclick="calculate('-')">-</button>
-    <button class="button" onclick="calculate('*')">*</button>
-    <button class="button" onclick="calculate('/')">/</button>
-    <br>
-    <input type="number" class="input" id="result" placeholder="Result" readonly>
- </div>
- 
+  <div class="container">
+    <form method="POST">
+      <div class="centro">
+      <div class="barb">Calculadora</div>
+      <div class="calculator">
+      <label class="label">Número 1:  
+          <input type="number" id="num1">
+      <label class="label">Número 2:    
+      <input type="number" id="num2">
+      <select id="operation">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+      </select>
+      <button onclick="calculate()">Calcular</button>
+      <p id="result">Result: </p>
+  </div>
+  
+  <script src="script.js"></script>
+  </body>
+  </html>
+  
+  
+  
+  
