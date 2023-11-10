@@ -13,19 +13,22 @@
     <form method="POST">
       <div class="centro">
       <div class="barb">Calculadora</div>
+      <p></p>
       <div class="calculator">
       <label class="label">Número 1:  
-          <input type="number" id="num1">
+          <input class ="form-control-container" type="number" id="num1">
       <label class="label">Número 2:    
-      <input type="number" id="num2">
-      <select id="operation">
+      <input class ="form-control-container" type="number" id="num2">
+      <label class="label">Operação: 
+        <select class ="form-control-container-op" id="operation">
           <option value="+">+</option>
           <option value="-">-</option>
           <option value="*">*</option>
           <option value="/">/</option>
-      </select>
-      <button onclick="calculate()">Calcular</button>
-      <p id="result">Result: </p>
+        </select>
+      <p></p><button class ="form-control-container-cal" onclick="calculate()">Calcular</button>
+      <p class= "find">Resultado:</p>
+      <p id="result" class="find"></p>
   </div>
   
   <script src="script.js"></script>
