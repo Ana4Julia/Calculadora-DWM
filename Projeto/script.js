@@ -27,5 +27,5 @@ function calculate() {
             return;
     }
 
-    document.getElementById("result").innerText = "Result: " + result;
+    document.getElementById("result").innerText = result;
 }
